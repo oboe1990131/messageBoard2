@@ -1,0 +1,27 @@
+body{
+    background-color: gray;
+}
+#frm{
+    border: solid gray 1px;
+    width: 20%;
+    border-radius: 15px;
+    margin: 100px auto;
+    background: white;
+}
+button{
+    color: #fff;
+    background:#337ab7;
+    padding: 5px;
+    margin: 0 auto;
+    width: 80px; height: 30px;
+    display: block;
+    border-radius: 5px;
+}
+input{
+    border-radius: 5px;
+    float: right;
+}
+.account-value::before {
+    content: "\00a0\00a0"; /* 两个空格的 Unicode 编码 */
+    margin-right: 35px; /* 根据需要调整空格的宽度 */
+}

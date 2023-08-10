@@ -1,0 +1,14 @@
+th {
+    border:1px solid black;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing:  30px;
+}
+button{
+    width: 80px; height: 30px;
+}
+body{
+    text-align: center;
+}

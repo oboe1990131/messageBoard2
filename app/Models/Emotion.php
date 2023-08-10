@@ -1,0 +1,19 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Emotion extends Model
+{
+    use HasFactory;
+
+    public $table = "messageboard.emotion";
+
+    // 動態style
+    // public function getEmotionsNS(){
+    //     $emotions = Emotion::get();
+    //     return $emotions;
+    // }
+}
