@@ -41,7 +41,7 @@ class Usermessage extends Model
         // TODO count的寫法可以再更好一點
         $match_count = Usermessage::select('u.id', 'u.message', 'u.auther_id', 'm.member_id')
                                     ->from('usermessage AS u')
-                                    ->leftJoin('member AS m', 'u.aut8her_id', '=', 'm.member_id')
+                                    ->leftJoin('member AS m', 'u.auther_id', '=', 'm.member_id')
                                     ->where('u.id', $message_id)
                                     ->where('u.auther_id', $member_id)
                                     ->count();

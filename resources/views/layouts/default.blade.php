@@ -21,24 +21,14 @@
         </style>
         <title>@yield('title')</title>
     </head>
+
     <body>
-        <div>
-            @if(Auth::user())
-                <div class="membercenter-container">
-                    <a href="{{ route('membercenter.index') }}">會員中心</a><br>
-                </div>
-                <div class="logout-button-container">
-                    <form method="POST" action="{{ route('logout') }}">
-                        @csrf
-                        <button type="submit">登出</button>
-                    </form>
-                </div>
-            @endif
-        </div>
+        <header></header>
 
         <div>
             @yield('content')
         </div>
-
+        
+        <footer></footer>
     </body>
 </html>

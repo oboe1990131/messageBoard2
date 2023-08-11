@@ -24,7 +24,7 @@ class LoginController extends Controller
     public function toLogin( Request $request )
     {
 /*----------------驗證帳密輸入格式---------------------------------------------------------*/
-        $validator = $this->validateTologin($request);
+        $validator = $this->validateTologin($request); // 驗證格式
 
         if($validator->fails()){
             return redirect('/login')->withErrors($validator->errors())->withInput();

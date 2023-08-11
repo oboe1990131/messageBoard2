@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.default')
 @section('title', 'create message')
 <link rel="stylesheet" type="text/css" href="{{ asset('writestyle.css') }}">
 
